@@ -1,11 +1,13 @@
 # bootstrap-fullcalendar
-Bootstrap less css to use for fullcalendar see the [Demo](https://jvancoillie.github.io/bootstrap-fullcalendar/)
+Bootstrap less css to use for [fullcalendar](https://fullcalendar.io)
+
+see the [Demo](https://jvancoillie.github.io/bootstrap-fullcalendar/)
 
 #### Gulp tasks
 
 task | description
 ------------ | -------------
-default (gulp) | create and minify css files
+default (gulp) | compile and minify css files
 copy | copy required files in the docs folder and copy the variables.less file in the less folder
 webserver | launch the demo bootstrap-fullcalendar [http://localhost](http://localhost)
 watch | Watch any change of less files and compiled them
