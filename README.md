@@ -11,8 +11,7 @@ webserver | launch the demo bootstrap-fullcalendar [http://localhost](http://loc
 watch | Watch any change of less files and compiled them
 
 
-
-#Run it with docker
+## Run it with docker
 
 1 Step build docker image
 ```
