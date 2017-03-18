@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <link href='./css/bootstrap-fullcalendar.css' rel='stylesheet' />
+    <link href='./css/bootstrap.css' rel='stylesheet' />
+    <script src='./js/moment.min.js'></script>
+    <script src='./js/jquery.min.js'></script>
+    <script src='./js/fullcalendar.js'></script>
+    <script>
+
+	$(document).ready(function() {
+    		$('#calendar').fullCalendar({
+    			header: {
+    				left: 'prev,next today',
+    				center: 'title',
+    				right: 'month,agendaWeek,agendaDay,listMonth'
+    			},
+    			defaultDate: '2017-02-12',
+    			navLinks: true, // can click day/week names to navigate views
+    			businessHours: true, // display business hours
+    			editable: true,
+    			events: [
+    				{
+    					title: 'Business Lunch',
+    					start: '2017-02-03T13:00:00',
+    					constraint: 'businessHours'
+    				},
+    				{
+    					title: 'Meeting',
+    					start: '2017-02-13T11:00:00',
+    					constraint: 'availableForMeeting', // defined below
+    					color: '#5cb85c',
+                        textColor: '#fff'
+    				},
+    				{
+    					title: 'Conference',
+    					start: '2017-02-18',
+    					end: '2017-02-20'
+    				},
+    				{
+    					title: 'Party',
+    					start: '2017-02-29T20:00:00'
+    				},
+    				// areas where "Meeting" must be dropped
+    				{
+    					id: 'availableForMeeting',
+    					start: '2017-02-11T10:00:00',
+    					end: '2017-02-11T16:00:00',
+    					rendering: 'background'
+    				},
+    				{
+    					id: 'availableForMeeting',
+    					start: '2017-02-13T10:00:00',
+    					end: '2017-02-13T16:00:00',
+    					rendering: 'background'
+    				},
+    				// red areas where no events can be dropped
+    				{
+    					start: '2017-02-24',
+    					end: '2017-02-28',
+    					overlap: false,
+    					rendering: 'background',
+    					color: '#f0ad4e'
+    				},
+    				{
+    					start: '2017-02-06',
+    					end: '2017-02-08',
+    					overlap: false,
+    					rendering: 'background',
+    					color: '#f0ad4e'
+    				}
+    			]
+    		});
+
+    	});
+    </script>
+    <style>
+
+        body {
+            margin: 40px 10px;
+            padding-top: 70px;
+            font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+            font-size: 14px;
+        }
+
+        #calendar {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Bootstrap-fullcalendar</a>
+        </div>
+    </div>
+</nav>
+
+<div id='calendar'></div>
+
+</body>
+</html>
+

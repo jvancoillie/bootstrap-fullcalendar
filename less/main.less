@@ -1,0 +1,56 @@
+.fc-toolbar {
+  text-align:center;
+  .fc-state-hover, .ui-state-hover {
+    z-index:2;
+  }
+  .fc-state-active, .ui-state-active {
+    z-index:4;
+  }
+  .fc-left {
+    float:left;
+  }
+  .fc-right {
+    float:right;
+  }
+  .fc-center {
+    display:inline-block;
+  }
+  h2 {
+    margin:0;
+  }
+  button {
+    position:relative;
+  }
+  .fc-state-down {
+    z-index:3;
+  }
+  button:focus {
+    z-index:5;
+  }
+}
+.fc-toolbar.fc-header-toolbar {
+  margin-bottom:1em;
+}
+.fc-toolbar.fc-footer-toolbar {
+  margin-top:1em;
+}
+.fc .fc-toolbar > * > * {
+  float:left;
+  margin-left:.75em;
+}
+.fc .fc-toolbar > * > :first-child {
+  margin-left:0;
+}
+.fc-view-container {
+  *, *:before, *:after {
+    -webkit-box-sizing:content-box;
+    -moz-box-sizing:content-box;
+    box-sizing:content-box;
+  }
+}
+.fc-view,
+.fc-view > table {
+  position:relative;
+  z-index:1;
+
+}

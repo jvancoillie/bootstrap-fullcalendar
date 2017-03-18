@@ -1,0 +1,48 @@
+{
+  "author": {
+    "name": "Jérémy Vancoillie"
+  },
+  "bugs": {
+    "url": "https://github.com/jvancoillie/bootstrap-fullcalendar/issues"
+  },
+  "peerDependencies": {
+    "bootstrap": "^3.3",
+    "moment": "^2.10",
+    "moment-timezone": "^0.4.0"
+  },
+  "dependencies": {
+    "fullcalendar": "^3.2.0",
+    "bootstrap": "^3.3",
+    "moment": "^2.10",
+    "jquery": "^3.1.1",
+    "moment-timezone": "^0.4.0"
+  },
+  "description": "fullcalendarjs Bootstrap 3 style. For usage, installation and demos see Project on GitHub",
+  "devDependencies": {
+    "fullcalendar": "^3.2.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-less": "^3.0.3",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-webserver": "^0.9.1",
+    "jquery": "^3.1.1",
+    "less-plugin-autoprefix": "^1.5.1",
+    "merge-stream": "^1.0.0"
+  },
+  "homepage": "https://jvancoillie.github.io/bootstrap-fullcalendar/",
+  "keywords": [
+    "twitter-bootstrap",
+    "bootstrap",
+    "fullcalendarjs"
+  ],
+  "license": "MIT",
+  "main": "dist/bootstrap-fullcalendar.css",
+  "name": "jvancoillie-bootstrap-fullcalendar",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jvancoillie/bootstrap-fullcalendar.git"
+  },
+  "version": "1.0.0"
+}
